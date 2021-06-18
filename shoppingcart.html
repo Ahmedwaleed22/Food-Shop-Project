@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ecommerce</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="static/css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+	<nav id="navbar" class="dark">
+		<h2 id="title"><a href="index.php">Website Name</a></h2>
+		<ul id="nav-links">
+			<li><a href="index.html" class="main">Home</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="shoppingcart.html">Shopping Cart</a></li>
+			<li><a href="login.html">Login/Register</a></li>
+		</ul>
+		<div id="nav-icon">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+    <div class="shoppingcart">
+        <div class="container">
+            <div class="cart-content">
+                <div class="cart-product">
+                    <img class="product-img" src="static/img/macbook.png" alt="ProductName" />
+                    <div class="text">
+                        <h2 class="product-name">Product: Macbook Pro M1 Chip 2020</h2>
+                        <p class="quantity">quantity: 1</p>
+                        <p class="size">Size: 13.3 Inch</p>
+                        <p class="price">Price: $1300</p>
+                        <button>Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <h2>$1300</h2>
+                <form action="#" method="post">
+                    <input type="hidden" name="total" value="1300" />
+                    <div class="payment-type">
+                        <label for="cash">Cash On Delivery</label>
+                        <input class="payment-type" id="cash" type="radio" name="payment" value="cash" checked />
+                    </div>
+                    <div class="payment-type">
+                        <label for="credit-card">Pay With Your Credit Card</label>
+                        <input class="payment-type" id="credit-card" type="radio" name="payment" value="Credit Card" />
+                    </div>
+                    <div class="adress">
+                        <textarea style="width: 100%; margin-top: 15px" name="address" placeholder="Your Address" required></textarea>
+                    </div>
+                    <div style="display: none" class="creditcard">
+                        <input type="text" name="cardnumber" placeholder="Credit Card Number" />
+                        <input type="date" name="expiration" />
+                        <input type="number" min="3" max="4" placeholder="CVC" />
+                        </div>
+                    <button class="btn btn-primary" type="submit">Confirm Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+	<script src="static/js/main.js"></script>
+</body>
+</html>
